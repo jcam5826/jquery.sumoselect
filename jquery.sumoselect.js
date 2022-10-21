@@ -108,7 +108,7 @@
           });
           O.select = O.E.parent();
           O.caption = $('<span>');
-          O.CaptionCont = $(`<p class="CaptionCont SelectBox ${O.E.attr('class')}" ><label><i></i></label></p>`)
+          O.CaptionCont = $(`<p class="CaptionCont SelectBox"><label><i></i></label></p>`)
             .attr('style', O.E.attr('style'))
             .prepend(O.caption);
           O.select.append(O.CaptionCont);
@@ -661,7 +661,7 @@
 
           O.select.attr('selected-count', lengthSelected);
           O.select.attr('is-selected', lengthSelected ? 'true' : 'false');
-          
+
           O.placeholder = O.placeholder ? (`${settings.prefix} ${O.placeholder}`) : settings.placeholder;
 
           //set display text
